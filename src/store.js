@@ -2,7 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import signUpReducer from './Components/SignUp/singUpSlice'; 
 import loginSlice from './Components/loginpages/loginSlice';
 
-import authReducer from '../authSlice';
+import authReducer from './authSlice';
 
 
 
