@@ -1,5 +1,5 @@
 
-import '../App.css';
+//import '../App.css';
 import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from './auth';
@@ -92,7 +92,7 @@ function LoginPage() {
   }
 
   return (
-    <div className="Login-page">
+    <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
       <form onSubmit={handleSubmit}>
         <input
           type="text"

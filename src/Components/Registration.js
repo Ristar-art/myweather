@@ -80,7 +80,7 @@ function RegistrationPage() {
       confirmPassword.length > 0 &&
       confirmPassword === password
     )
-    // posts the data that has been registered to the json server
+    
     {
       fetch('http://localhost:7000/profile', {
         method: 'POST',
@@ -90,6 +90,7 @@ function RegistrationPage() {
         .then(() => {
           setIsPending(false);
           navigate('/', { replace: true });
+          console.log("it falied o register")
         })
         .catch((error) => {
           console.error('Error creating user:', error);

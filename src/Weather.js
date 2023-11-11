@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
-const Weather = () => {
+import { AuthProvider } from "./Components/auth";
+const Weather = ({ userName }) => {
   const [weatherData, setWeatherData] = useState({});
   const [error, setError] = useState(null);
    const [location,setLocation] = useState("")
+   
+  
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -98,7 +101,7 @@ const Weather = () => {
                 // paddingLeft:20
               }}
             >
-              <p>Hi Boiketlo</p>
+              <p> Hi {userName}</p>
             </div>
             <div
               style={{
@@ -204,7 +207,7 @@ const Weather = () => {
               }}
             >
               <p>wind Speed:{weatherData.daily && weatherData.daily.windspeed_10m_max[0]} km/h</p>
-              <p>Humidity: {weatherData.daily.precipitation_probability_max[0]}%</p>
+              {/* <p>Humidity: {weatherData.daily.precipitation_probability_max[0]}%</p> */}
             </div>
           </div>
         </div>

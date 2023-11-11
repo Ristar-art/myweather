@@ -1,0 +1,12 @@
+{
+  "profile": [
+    {
+      "firstName": "Boikelto",
+      "lastName": "Mochochoko",
+      "email": "mochochokoboiketlo@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "id": 1
+    }
+  ]
+}

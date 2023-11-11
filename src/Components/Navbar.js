@@ -13,13 +13,13 @@ export const Navbar =({user}) =>{
     
 return(
 
-    <nav>
-        <Link to = '/'>Home </Link>
-        <Link to = '/about'>About</Link>       
-        <Link to = '/weathre'>Weatrer</Link> 
-        <Link to = '/registrationpage'>Registration Page</Link>
+    <nav style={{justifyContent:"space-between", display:"flex", height:"5vh",width:"100vw",backgroundColor:"blue", alignItems:"center"}}>
+        <Link style={{  color: "white"}} to = '/'>Home </Link>
+        <Link style={{  color: "white"}} to = '/about'>About</Link>       
+        <Link style={{  color: "white"}} to = '/weather'>Weatrer</Link> 
+        <Link style={{  color: "white"}} to = '/registration'>Registration Page</Link>
           {
-            !auth.authenticated &&( <Link to= 'login'>Login</Link>
+            !auth.authenticated &&( <Link style={{  color: "white"}} to= 'login'>Login</Link>
             )
           }
          
